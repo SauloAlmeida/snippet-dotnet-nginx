@@ -1,0 +1,16 @@
+version: '3.9'
+
+services:
+  api:
+    image: sp-dotnet-nginx
+    build: ./src/API/
+    ports:
+      - "5000"
+  app: 
+    image: nginx:alpine
+    volumes:
+       - ./src/nginx/nginx.conf:/etc/nginx/nginx.conf:ro
+    depends_on:
+       - api
+    ports:
+       - "4000:4000"

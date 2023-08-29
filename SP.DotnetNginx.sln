@@ -3,7 +3,16 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.33516.290
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SP.DotnetNginx", "SP.DotnetNginx.csproj", "{94688E21-FBC2-47B9-BDE6-99ACDC172E83}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{15A0E6EB-6BE8-44F4-828F-CD7F83F51620}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "API", "src\API\API.csproj", "{5FE87F75-3AB7-4141-A454-7D3950E77D68}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{285C396E-6FF6-4B04-86A4-C7FF69C2C886}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "nginx", "nginx", "{EC6C74DC-19CB-4E2E-B4D0-C840AC1E1AB5}"
+	ProjectSection(SolutionItems) = preProject
+		src\nginx\nginx.conf = src\nginx\nginx.conf
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,13 +20,21 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{94688E21-FBC2-47B9-BDE6-99ACDC172E83}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{94688E21-FBC2-47B9-BDE6-99ACDC172E83}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{94688E21-FBC2-47B9-BDE6-99ACDC172E83}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{94688E21-FBC2-47B9-BDE6-99ACDC172E83}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5FE87F75-3AB7-4141-A454-7D3950E77D68}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5FE87F75-3AB7-4141-A454-7D3950E77D68}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5FE87F75-3AB7-4141-A454-7D3950E77D68}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5FE87F75-3AB7-4141-A454-7D3950E77D68}.Release|Any CPU.Build.0 = Release|Any CPU
+		{285C396E-6FF6-4B04-86A4-C7FF69C2C886}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{285C396E-6FF6-4B04-86A4-C7FF69C2C886}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{285C396E-6FF6-4B04-86A4-C7FF69C2C886}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{285C396E-6FF6-4B04-86A4-C7FF69C2C886}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{5FE87F75-3AB7-4141-A454-7D3950E77D68} = {15A0E6EB-6BE8-44F4-828F-CD7F83F51620}
+		{EC6C74DC-19CB-4E2E-B4D0-C840AC1E1AB5} = {15A0E6EB-6BE8-44F4-828F-CD7F83F51620}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {701BF932-75CB-48D6-A486-7483D58DFB92}
