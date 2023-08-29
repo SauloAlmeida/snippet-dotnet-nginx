@@ -57,7 +57,7 @@ git clone https://github.com/SauloAlmeida/snippet-dotnet-nginx
 
 2. Acesse o diretório
 ```bash
-cd SP.DotnetNginx
+cd snippet-dotnet-nginx
 ```
 
 ## Rodar o projeto
@@ -65,4 +65,9 @@ cd SP.DotnetNginx
 1. Rode o projeto
 ```bash
 docker compose up --scale api=5
+```
+
+2. Acesse a rota 
+```bash
+http://localhost:4000/weatherforecast
 ```
